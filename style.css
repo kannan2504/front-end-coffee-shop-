@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+/* header styling */
+
+@media screen {
+        header{
+            background-color: rgba(78, 70, 1, 0.686) ; 
+            width: 100%;
+            height: 15vh;
+            overflow: hidden;
+            background-color: hsl(50,33% 25%/75%saturation, lightness);
+        } 
+
+
+
+        .nav-menu{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+
+        }
+        .menu-item{
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .menu-item:hover{
+            background-color: rgb(121, 168, 168);
+            border: 2px solid aqua;
+            border: none;
+            border-radius: 50%;
+            color: rgb(165, 58, 58);
+            transition: 0.3s ease;
+        
+        }
+        .nav-item a{
+            text-decoration: none;
+            color: rgb(147, 59, 59);
+            
+        }
+        .nav-logo{
+        
+            text-decoration: none;
+            color: rgba(144, 134, 132, 0.1);
+        }
+        .navbar{
+            background-color: rgb(99, 24, 24);
+            width: 100%;
+            z-index: 5;
+        
+
+        }
+        .nav-text{
+            font-size: 50px;
+            font-weight: 1000;
+            background-image: url(images/coffeeshop2.jpeg);
+            -webkit-background-clip:text;
+            background-position: bottom;
+        }
+
+
+        .nav-menu button{
+            display: none;
+        } 
+        .menu-open{        
+            display: none;
+        }
+
+
+        header .navbar{
+            position: fixed;
+        }
+
+}
+
+/* home styling */
+@media screen {
+    .home-section{
+        background-color: rgba(78, 70, 1, 0.686); 
+        
+        min-height: 60vh;
+    }
+
+    
+    
+
+home-section{
+    background-color: aqua;
+    min-height: 50vh;
+}
+
+.home-content{
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+
+}
+
+.home-para{
+    padding-left: 100px;
+}
+    .para-title{
+        font-family:"miniver", Helvetica, sans-serif ;
+        
+
+    }
+    .para-title-h2{
+        color: orange;
+        font-size: 40px;
+        font-weight: 1000;
+    }
+
+        .para{
+        font-size: 15px;
+        font-weight: 800;
+        color: rgba(208, 208, 3, 0.547);
+        font-family: "Edu NSW ACT Hand Pre",cursive;
+        letter-spacing: 2px;
+        padding-left :10px;
+        text-transform: capitalize;
+       
+    }
+
+
+    .para-div{
+         padding-top: 50px;
+    }
+.home-image{
+    margin: 4rem auto;
+    position: relative;
+    background: url(images/coffee3.jpeg) center/cover  no-repeat ;
+  height: 40vh;
+    border: 2px solid rgb(126, 143, 126);
+    box-shadow: 10px 10px 10px 10px rgba(53, 28, 28, 0.79);
+    border-radius:50%;
+    width: 40vh;
+    transition: background 1s ease;
+    background-position: bottom;
+}
+
+.btn-left1{
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    background-color:transparent;
+    border: 1px solid rgb(172, 172, 165);
+    padding: 10px;
+    border-radius: 50%;
+    transform: translateY(calc(-50%));
+    cursor: pointer;
+}
+
+.btn-right1{
+    position: absolute;
+    color: black;
+    top: 50%;
+    right: -5%;
+    background-color:transparent;
+    border: 1px solid rgb(172,172,165);
+    padding: 10px;
+    border-radius: 50%;
+    transform: translateY(calc(-50%));
+    cursor: pointer;
+}
+
+.btn-image{
+    display: none;
+}
+}
+ 
+/* about styling */
+
+@media screen {
+    
+
+
+
+        .about-content{
+            background-color:rgb(39, 36, 39);
+            min-height: 400px;
+        }
+        .content{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .about-image-inside{
+            border-radius: 50%;
+            border:  1px solid aliceblue;
+            box-shadow: 1px 10px 10px 1px rgb(195, 95, 95);
+        }
+        .about-detials{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;  
+        }
+        .about-heading{
+            font-size: 32px;
+            color: rgb(145, 67, 67);
+            text-align: center;
+            font-weight: 800;
+
+        }
+
+        .about-heading::after{
+            content: " ";
+            display: block;
+            border-radius: 10px;
+            margin-left:5px ;
+            margin-top: 10px;
+            width: 140px;
+            height: 5px;
+            background-color: rgb(196, 122, 31) ; 
+        }
+
+        .about-para{
+            font-style: italic ;
+            max-width: 800px;
+            color: rgb(63, 123, 150);
+            padding-bottom: 60px;
+            line-height: 25px;
+            word-spacing: 5px;
+        }
+
+
+        .social-media{
+            display: flex;
+            gap: 20px;
+            }
+        
+        .facebook{
+            color: rgb(29, 57, 125);
+            
+        }
+        .insta{
+            color: rgb(166, 43, 62);
+        }
+
+        .twitter{
+            color: rgb(57, 55, 55);
+        }
+
+        .facebook:hover{
+            color: rgb(5, 5, 239);
+            box-shadow: 1px 1px 1px 1px rgb(12, 52, 197);
+        }
+
+        .insta:hover{
+            color: rgb(218, 13, 47);
+            box-shadow: 1px 1px 1px 1px rgb(185, 19, 19);
+        }
+        .twitter:hover{
+            color: black;
+            box-shadow: 1px 1px 1px 1px rgb(245, 239, 239);
+        }
+
+
+}
+
+
+
+    /* menu styling */
+
+  @media screen {
+    
+
+            
+
+        .menu-section{
+            
+            object-fit: cover;
+        background: url(images/back.jpeg) center/cover  no-repeat;
+        
+        
+        }
+
+        .menu-title{
+        
+            font-size: 32px;
+            color: rgb(145, 67, 67);
+            text-align: center;
+            font-weight: 800;
+
+            padding: 10px;
+            position: relative;
+        }
+        .menu-title::after{
+            content: " ";
+            width: 140px;
+            height: 5px;
+        margin: 8px auto;
+            display: block;
+            background-color:rgb(196, 122, 31);
+            border-radius: 10px;
+            
+        }
+
+        .menu-all{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-evenly;
+            color: rgb(136, 6, 151);
+            font-weight: 700;
+            font-size: 16px;
+            font-family:"edu nsw act hand pre",cursive ;
+            overflow: hidden;
+        transition: 0.6s ease;
+        cursor:zoom-in;
+            
+
+        }
+
+
+
+        .menu-values:hover{
+            transform: scale(1.2);
+            
+
+        }
+
+        .first123 figure{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid rgb(218, 206, 206);
+            border-radius:10px;
+            background-color: rgba(255, 228, 196, 0.514);
+            padding: 10px;
+            }
+        .first456 figure{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid rgb(218, 206, 206);
+            border-radius:10px;
+            background-color: rgba(255, 228, 196, 0.514);
+            padding: 10px;
+            
+        }
+        .first789 figure{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid rgb(218, 206, 206);
+            border-radius:10px;
+            background-color: rgba(255, 228, 196, 0.514);
+            padding: 10px;
+            
+        }
+        .first456 figcaption{
+        padding : 10px 0;
+        text-align: center;
+
+        }
+        .first123 figcaption{
+        padding : 10px 0;
+        text-align: center;
+
+        }
+        .first789 figcaption{
+        padding : 10px 0;
+        text-align: center;
+        
+
+        }
+
+        .first456 img{
+            display: flex;
+            align-items: center;
+            image-rendering: crisp-edges;
+
+        }
+}
+/* contact styling */
+
+ @media screen  {
+    
+ 
+
+        .contact{
+            font-family: Arial, Helvetica, sans-serif;
+        
+            padding: 20px;
+            background-image: url(images/coffeeshop3.jpeg);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            object-fit: cover;
+        
+            
+        }
+        /* .contact{
+            margin-bottom: 150px;
+        } */
+        .contact-section{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            
+            }
+            .contact-head{
+            font-size: 32px;
+            color: rgb(145, 67, 67);
+            text-align: center;
+            font-weight: 800;
+
+            }
+
+            .contact-head::after{
+            content: " ";
+            display: block;
+            border-radius: 10px;
+           margin: 5px auto;
+            width: 220px;
+            height: 5px;
+            background-color: rgb(196, 122, 31); 
+        }
+
+
+
+        .contact-us{
+            color: rgba(160, 203, 31, 0.793);
+            text-align: center;
+            }
+
+        .cnct p{
+            color: rgb(225, 227, 221);
+        }
+
+
+
+        .our-detials{
+            list-style: none;
+        }
+
+
+
+        /* container element */
+        .contact-title{
+            color: rgba(34, 13, 192, 0.827);
+            text-align: center;
+        }
+        .container-form{
+            margin-top:200px ;
+            max-width: 400px;
+            border-radius: 40px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(75, 129, 102, 0.1);
+            backdrop-filter: blur(10px);
+
+        } 
+
+        .container-form{
+           margin-bottom: 20px;
+        }
+        .contact-detials{
+            font-size: small;
+            font-weight: 500;
+            
+        }
+        .label{
+            display: block;
+            margin-bottom: 5px;
+            color: rgba(140, 218, 14, 0.658);
+            
+        }
+        .input,.textarea{
+            width: 80%;
+            padding: 5px;
+            margin-bottom: 5px;
+            border: 1px solid rgb(105, 65, 65);
+            border-radius: 10px;
+            outline: none;
+            background-color: transparent;
+            color: azure;
+        
+        }
+        .textarea
+        {
+            max-width: 400px;
+            max-height: 300px;}
+        .input:focus{
+            border:1px solid rgb(238, 205, 205);
+            
+        }
+        .btn-input{
+            padding: 5px;
+            background-color: rgb(104, 118, 114,0.5);
+            border-radius: 5px;
+            margin: 4px 2px 0  ;
+            margin-top: 10px;
+            color:white;
+        }
+        .btn-input:hover{
+            background-color:transparent;
+            color: rgb(131, 81, 81);
+            border: 1px solid whitesmoke;
+        }
+
+}
+
+/* footer styling */
+
+@media screen {
+    .footer-section{
+        background-color: rgba(16, 10, 10, 0.773);
+        color: antiquewhite;
+    }
+
+    .footer-para{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-para .twitter{
+        color: rgb(43, 45, 46);
+       
+        
+    }
+    .footer-para a{
+        text-decoration: none;
+        
+    }
+    .anchor{
+        color: antiquewhite ;
+        transition: 0.3s ease;
+    }
+    .anchor:hover{
+        color: aliceblue;
+    }
+}
+
+.hello{
+    background-color: black;
+}
+
+
+@media  screen and (max-width:1024px) {
+     .menu-all{
+        cursor: pointer;
+        display:block;
+    }
+    .menu-values:hover{
+    transform: none;
+    }
+}
+  @media screen and (max-width:800px) {
+
+
+.navbar :where(#menu-close-button ,#menu-open-button ){
+display: block;  
+font-size: large;
+font-weight: 600;
+}
+
+.navbar{
+    display: block;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+ .navbar .nav-menu{
+    display: block;
+    position:fixed;
+    right: 10px;;
+    top:0;
+    width:300px;
+    height:100%;
+    background-color: rgb(64,0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    transition:right 3s ease;
+    z-index: 1;
+ }
+/* 
+body.show-mobile-menu .navbar .nav-menu .menu-item{
+    right: 0;
+} */
+ .navbar .menu-item{
+     display: block;
+     margin-top: 15px;
+     font-size: large;
+     font-weight: 700;
+ }
+  /* #menu-open-button{      // not required
+    display: flex;
+   
+} */
+ #menu-close-button{
+    display: flex;
+   
+}
+.menu-open button{
+    
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    color: rgb(240, 242, 240);
+    top: 10px;
+    right: 0;
+}
+.menu-open{
+    display: flex;
+    
+    
+   /* flex-direction:column;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-right: 10px;   */
+    
+}  
+.navbar .nav-menu {
+    right: -300px; /* Hide menu */
+}
+body.show-mobile-menu .navbar .nav-menu {
+   right : 0; /* Reveal menu */
+}
+
+  /*  contact section */
+
+
+
+    .contact-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+        
+    }
+
+
+
+      .home-content{
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+    }
+
+    
+    .menu-all{
+        cursor: pointer;
+        
+        display:block;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; */
+        width: 100%;
+        margin: auto;
+    }
+
+    .menu-values:hover{
+        transform: none;
+    }
+
+    .first456 figure{
+    
+    padding: 0 60px;
+    margin-left: 40px;
+    max-width: 90%;
+    }
+
+    .first789 figure{
+    margin-left: 40px;
+    max-width: 90%;
+    }
+
+    .first123{
+        margin-left: 40px;
+    max-width: 90%;
+    }
+
+
+
+ 
+}
